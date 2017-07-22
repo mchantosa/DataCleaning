@@ -37,5 +37,24 @@ train_set <- mutate(train_set, data_source = "training")
 combined_dataset <- rbind(test_set,train_set)
 combined_dataset$data_source<-as.factor(combined_dataset$data_source)
 
-#export data set
-write.table(combined_dataset, "mydata.csv", sep = ",")
+#create submission
+colnames <- col_name_base[col_name_base_select]
+submission <- data.frame()
+for (i in levels(combined_dataset$activity)){
+        for (j in levels(combined_dataset$data_source)){
+                x <- filter(combined_dataset, activity == i)
+                x <- filter(combined_dataset, data_source == j)
+                x <- x[1:(length(names(x))-2)]
+                #y <- sapply(x,mean)
+                df <- data.frame(names = colnames, 
+                           average = sapply(x,mean), 
+                           activity = i, 
+                           data_source = j) 
+                submission <- rbind(submission, df)
+                
+        }
+}
+names(submission) <- c("variable", "average", "activity", "source")        
+
+#export submission
+write.table(submission, "submission.txt", row.name=FALSE)
