@@ -5,9 +5,9 @@ The objective of this repo is to transform an example of raw data into clean dat
 ## This dataset includes the following files
 
 * CodeBook.md- detailed description of mydata.csv
-* courseProj.R- main file and entry point for producing mydata.csv
-* getURLDownload.R- called by courseProj.R, provides a download with a time marker
-* loadData.R- called by courseProj.R, processes th downloaded data and pulls it into the workspace
+* run_analysis.R- main file and entry point for producing mydata.csv
+* getURLDownload.R- called by run_analysis.R, provides a download with a time marker
+* loadData.R- called by run_analysis.R, processes th downloaded data and pulls it into the workspace
 * submission.txt- the objective of this repository, data produced by this source code
 
 ## To produce data set
@@ -15,7 +15,7 @@ The objective of this repo is to transform an example of raw data into clean dat
 submission.txt can be reproduced by cloning this respository, and sourcing courseProj.R
 
 ```
-source("courseProj.R")
+source("run_analysis.R")
 ```
 
 ### Additional information
