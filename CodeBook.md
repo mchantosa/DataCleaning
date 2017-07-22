@@ -40,7 +40,7 @@ Original source data was downloaded 22July2017
      * Store these in a new data frame of parameters [variable, average, activity, source]
 
 ### Variables
-* variable
-* average
-* activity
-* source
+* variable: variable for which a mean value was computed
+* average: average of observation value under variable subsetted by corresponding activity and source values
+* activity: A factor from  [WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING] 
+* source: A factor from [Test, Training]
