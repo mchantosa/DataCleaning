@@ -8,7 +8,7 @@ A detailed summary of the methods used to generate the originl dataset can be fo
 
 Original source data was downloaded 22July2017
 
-This data set has a header, the hearder contains variable names for the 
+This data set has a header, the hearder contains variable names 
 
 
 ### Variables
@@ -79,4 +79,4 @@ This data set has a header, the hearder contains variable names for the
 * fBodyBodyGyroJerkMag-mean(): Euclidean norm magnitude of fBodyBodyGyroJerk, mean
 * fBodyBodyGyroJerkMag-std(): Euclidean norm magnitude of	fBodyBodyGyroJerk, standard deviation
 * activity: Activity being conducted at the time of measurement
-* data_source: marker identifying whether original the source came from test or triaing data
+* data_source: marker identifying whether the original source came from test or training data
