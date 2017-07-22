@@ -35,7 +35,9 @@ Original source data was downloaded 22July2017
 
 1. Combine data sets, we will refer to this as the combined_data henceforth
 
-
+1. Create a new data (the end product) frame from the combined data
+     * Itteratively filter data by permutations of activity and source, gather the resulting mean values accross columns
+     * Store these in a new data frame of parameters [variable, average, activity, source]
 
 ### Variables
 * variable
