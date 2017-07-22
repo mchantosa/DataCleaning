@@ -8,11 +8,11 @@ The objective of this repo is to transform an example of raw data into clean dat
 * courseProj.R- main file and entry point for producing mydata.csv
 * getURLDownload.R- called by courseProj.R, provides a download with a time marker
 * loadData.R- called by courseProj.R, processes th downloaded data and pulls it into the workspace
-* mydata.csv- the objective of this repository, data produced by this source code
+* submission.txt- the objective of this repository, data produced by this source code
 
 ## To produce data set
 
-myData.csv can be reproduced by cloning this respository, and sourcing courseProj.R
+submission.txt can be reproduced by cloning this respository, and sourcing courseProj.R
 
 ```
 source("courseProj.R")
